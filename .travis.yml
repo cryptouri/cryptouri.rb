@@ -1,0 +1,17 @@
+language: ruby
+rvm: 2.3.5
+
+branches:
+  only:
+  - master
+
+before_install: gem install bundler -v 1.16.1
+install: bundle
+
+matrix:
+  fast_finish: true
+  include:
+  - name: rspec
+    script: bundle exec rspec --backtrace
+  - name: rubocop
+    script: bundle exec rubocop
