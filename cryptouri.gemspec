@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version     = ">= 2.3"
   spec.required_rubygems_version = ">= 2.4"
 
-  spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "bundler", "~> 2.0"
 end
