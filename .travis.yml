@@ -1,17 +1,20 @@
 language: ruby
-rvm: 2.3.5
+cache: bundler
+
+before_install:
+  - gem install bundler
+  - bundle --version
+
+install: bundle install --without development doc
+
+script: bundle exec rake
+
+env: JRUBY_OPTS="$JRUBY_OPTS --debug"
+
+rvm:
+  - 2.5
+  - 2.6
 
 branches:
   only:
-  - master
-
-before_install: gem install bundler -v 1.16.1
-install: bundle
-
-matrix:
-  fast_finish: true
-  include:
-  - name: rspec
-    script: bundle exec rspec --backtrace
-  - name: rubocop
-    script: bundle exec rubocop
+    - develop
