@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
     including keys, signatures, and fingerprints/digests. It leverages the bech32
     serialization format to provide a human-friendly encoding and checksums.
   DESCRIPTION
-  spec.homepage      = "https://github.com/cryptouri/cryptouri-rb/"
+  spec.homepage      = "https://github.com/cryptouri/cryptouri.rb/"
   spec.license       = "Apache 2.0"
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
