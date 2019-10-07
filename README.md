@@ -4,13 +4,13 @@ Ruby implementation of [CryptoURI]: a [URN]-like namespace for representing
 cryptographic objects including keys, signatures, and digests:
 
 ```
-crypto:public:key:ed25519:6adfsqvzky9t042tlmfujeq88g8wzuhnm2nzxfd0qgdx3ac82ydq3pkr2c
+crypto:pub:key:ed25519:6adfsqvzky9t042tlmfujeq88g8wzuhnm2nzxfd0qgdx3ac82ydqf03cvv
 ```
 
 The "dasherized" syntax provides a URI-safe alternative:
 
 ```
-crypto-public-key-ed25519-6adfsqvzky9t042tlmfujeq88g8wzuhnm2nzxfd0qgdx3ac82ydqc3p98e
+crypto-pub-key-ed25519-6adfsqvzky9t042tlmfujeq88g8wzuhnm2nzxfd0qgdx3ac82ydqlu986g
 ```
 
 [Documentation](https://bitly.com/98K8eH)
